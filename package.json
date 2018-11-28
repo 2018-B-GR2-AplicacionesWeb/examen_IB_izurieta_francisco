@@ -1,0 +1,20 @@
+{
+    "name": "examen_IB_izurieta_francisco",
+    "version": "1.0.0",
+    "description": "## 1) Busque los tipos de \"gender\" en el arreglo `people.json` ## 2) Busque los tipos de \"eye_color\" en el arreglo `people.json` ## 3) Busque los tipos de \"skin_color\" en el arreglo `people.json` ## 4) Busque los tipos de \"hair_color\" en el arreglo `people.json`",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "inquirer": "^6.2.0",
+        "rxjs": "^6.3.3"
+    },
+    "devDependencies": {
+        "@types/inquirer": "0.0.43",
+        "@types/node": "^10.12.5"
+    }
+}
