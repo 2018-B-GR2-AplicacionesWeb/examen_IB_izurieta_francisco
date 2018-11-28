@@ -34,6 +34,16 @@ const getArrayType = (characters: Character[], type: string) => {
     console.log(types);
 };
 
+const totalObject = (characters: Character[], object: string) => {
+    const objects = characters.map((character: Character) => {
+        return {
+            nombre: character.name,
+            [object]: character[object].length
+        };
+    });
+    console.log(objects);
+};
+
 const sumMassHeight = (characters: Character[]) => {
     console.log(
         '\nCalcular la sumatoria de la propiedad "mass" y la propiedad "height".'
@@ -76,6 +86,12 @@ const main = async () => {
     findType(characters, 'hair_color');
 
     sumMassHeight(characters);
+    console.log('\nRevisar si todos los personajes han usado vehicles.');
+    totalObject(characters, 'vehicles');
+    console.log('\nRevisar si todos los personajes han usado starships.');
+    totalObject(characters, 'starships');
+    console.log('\nCalcular en cuantos films han aparecido cada personaje:');
+    totalObject(characters, 'films');
 };
 
 main();
